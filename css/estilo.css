@@ -1,0 +1,82 @@
+li{list-style-type: none;padding:  10px;}
+a{text-decoration: none;}
+
+.p-50{padding: 50px;}
+.padT-20{padding-top: 20px;}
+.padB-20{padding-bottom: 20px;}
+.m-50{margin: 50px;}
+
+.bgColor{background-color: rgb(92, 133, 99);}
+.bgComplementario{background-color: rgb(121, 167, 148);}
+
+.alignItems{display: flex; align-items: center;}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+.gridMain{display: grid;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "imgMain textMain";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;}
+
+    .rrss{display: grid;
+        grid-template-areas: 
+        "Insta Face Whatp";
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;}
+
+.Insta{grid-area: Insta;}
+.Face{grid-area: Face;}
+.Whatp{grid-area: Whatp;}
+
+
+
+
+.encabezado{grid-area: encabezado;}
+.imgMain{grid-area: imgMain;}
+.textMain{grid-area: textMain;}
+
+header,ul,footer{display: flex;}
+.container footer{justify-content: space-around;}
+
+.imgMain img{width: 100%;}
+
+
+
+.logoFoo{grid-area: logoFoo;}
+.rrss{grid-area: rrss;}
+.contacto{grid-area: contacto;}
+
+@media only screen and (max-width: 768px){
+    header{display: flex; flex-direction: column;}
+    main{display: flex; flex-direction: column;}
+    .gridFoo{display: flex; flex-direction: column;} 
+    .centerFlex{display: flex;}
+    .justifyCenter{display: flex; justify-content: center;}
+    .gridMain{display: grid;
+        grid-template-areas: 
+        "encabezado"
+        "imgMain"
+        "textMain";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;}
+    li{padding: 5px;}
+
+
+}
+
+.fuentes{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.ftesMain{font-size: 15px;color: rgb(12, 53, 39);
+    width: 100%;}
